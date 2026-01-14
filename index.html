@@ -55,16 +55,15 @@
       font-size: 14px;
       color: #777;
     }
-    .certs {
-  display: flex;
-  flex-wrap: wrap;
+  .certs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 30px;
-  justify-content: center;
-  text-align: center;
+  justify-items: center;
 }
 
 .cert-item {
-  width: 180px;     /* fixed width ensures proper centering */
+  width: 180px;
   text-align: center;
 }
   </style>
